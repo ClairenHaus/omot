@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Owning My Own Truth offers community outreach, the OMOT Program, and monthly workshops for survivors of domestic abuse in Northern Bay Area, CA and Metro Atlanta, GA.">
+  <title>Services — Owning My Own Truth</title>
+  <link rel="stylesheet" href="../css/design-system.css">
+  <link rel="stylesheet" href="../css/services.css">
+</head>
+<body>
+
+  <!-- Safety Exit Button -->
+  <button class="safety-exit" onclick="safetyExit()" aria-label="Quickly leave this site">
+    ✕ Exit Site Quickly
+  </button>
+
+  <!-- Crisis Bar -->
+  <div class="crisis-bar" role="banner">
+    If you are in immediate danger, call <a href="tel:911">911</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    National DV Hotline: <a href="tel:18007997233">1-800-799-7233</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    Text START to <a href="sms:88788">88788</a>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <img src="../images/logo-refined.png" alt="Owning My Own Truth" class="nav-logo-img">
+        <span class="nav-logo-text">Owning My Own Truth</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="get-help.html" class="nav-get-help">Get Help</a></li>
+        <li><a href="get-involved.html">Get Involved</a></li>
+        <li><a href="donate.html" class="nav-cta">Donate</a></li>
+      </ul>
+      <button class="nav-hamburger" onclick="openMobileNav()" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav-mobile-overlay" id="mobileNav" role="dialog">
+    <div class="nav-mobile-header">
+      <img src="../images/logo-refined.png" alt="OMOT Logo" style="width:44px;height:44px;object-fit:contain;">
+      <button class="nav-mobile-close" onclick="closeMobileNav()">&times;</button>
+    </div>
+    <nav class="nav-mobile-links">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" style="color:var(--color-gold);font-weight:700;">Services</a>
+      <a href="get-help.html">Get Help</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="donate.html">Donate</a>
+    </nav>
+    <div class="nav-mobile-crisis">
+      In crisis? Call <a href="tel:18007997233">1-800-799-7233</a> now.
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section class="services-hero">
+      <div class="container">
+        <p class="text-eyebrow" style="color:var(--color-gold-light);">What we offer</p>
+        <h1 style="color:var(--color-white);">Support that meets you<br>where you are.</h1>
+        <p class="services-hero-body">
+          Every survivor's path looks different. Our programs are designed to meet real needs — whether you need someone to talk to, help navigating resources, or a community to learn and heal alongside.
+        </p>
+        <div class="services-hero-nav">
+          <a href="#outreach" class="services-nav-pill">Community Outreach</a>
+          <a href="#program" class="services-nav-pill">OMOT Program</a>
+          <a href="#workshops" class="services-nav-pill">Workshops</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SERVICE 1: COMMUNITY OUTREACH ── -->
+    <section class="section bg-white service-section" id="outreach">
+      <div class="container">
+        <div class="service-block">
+          <div class="service-block-label">
+            <div class="service-block-icon">🤝</div>
+            <p class="text-eyebrow">Service 01</p>
+          </div>
+          <div class="service-block-content">
+            <div class="divider"></div>
+            <h2>Community Outreach</h2>
+            <p class="service-lead">
+              Healing happens in community. Our outreach work connects survivors with trusted organizations, emergency resources, and networks of support — so no one faces their situation alone.
+            </p>
+            <p class="service-body">
+              OMOT builds and maintains relationships with shelters, legal advocates, healthcare providers, and community organizations across Northern Bay Area, CA and Metro Atlanta, GA. When you reach out, we do not just hand you a list of phone numbers — we make connections on your behalf, walk alongside you through referrals, and follow up to make sure you are getting what you need.
+            </p>
+
+            <div class="service-features">
+              <div class="service-feature">
+                <div class="feature-dot"></div>
+                <div>
+                  <strong>Resource navigation</strong>
+                  <p>We help you find the right services — shelter, food, legal help, childcare — and cut through the confusion of where to start.</p>
+                </div>
+              </div>
+              <div class="service-feature">
+                <div class="feature-dot"></div>
+                <div>
+                  <strong>Warm referrals</strong>
+                  <p>We make introductions, not just referrals. You go into every connection knowing someone is already vouching for you.</p>
+                </div>
+              </div>
+              <div class="service-feature">
+                <div class="feature-dot"></div>
+                <div>
+                  <strong>Follow-up support</strong>
+                  <p>We check in. If something is not working, we find another path with you.</p>
+                </div>
+              </div>
+              <div class="service-feature">
+                <div class="feature-dot"></div>
+                <div>
+                  <strong>Community partnerships</strong>
+                  <p>OMOT works with trusted local organizations in both regions so survivors have access to a full network of care.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="get-help.html" class="btn btn-primary" style="margin-top:var(--space-8);">Connect with an Advocate</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SERVICE 2: OMOT PROGRAM ── -->
+    <section class="section bg-surface service-section" id="program">
+      <div class="container">
+        <div class="service-block service-block-reverse">
+          <div class="service-block-label">
+            <div class="service-block-icon">💜</div>
+            <p class="text-eyebrow">Service 02</p>
+          </div>
+          <div class="service-block-content">
+            <div class="divider"></div>
+            <h2>The OMOT Program</h2>
+            <p class="service-lead">
+              Our flagship program is a holistic, individualized support system that addresses the full range of what survivors need — not just safety, but stability, autonomy, and healing.
+            </p>
+            <p class="service-body">
+              We recognize that leaving an abusive situation is not just an emotional decision — it is a logistical, financial, and legal one. The OMOT Program provides hands-on, wraparound support to help survivors address all of those dimensions at once, at their own pace.
+            </p>
+
+            <div class="program-pillars">
+              <div class="pillar-card">
+                <div class="pillar-icon">🚗</div>
+                <h4>Transportation</h4>
+                <p>Getting to appointments, court dates, or safe locations should not be a barrier. We assist with transportation logistics for program participants.</p>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-icon">🧠</div>
+                <h4>Counseling</h4>
+                <p>Individual and family counseling support to help survivors process trauma, rebuild self-worth, and develop healthy relationship patterns.</p>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-icon">⚖️</div>
+                <h4>Legal Advocacy</h4>
+                <p>Guidance through protective orders, custody situations, and legal processes — with connections to attorneys and legal aid organizations.</p>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-icon">💰</div>
+                <h4>Financial Literacy</h4>
+                <p>Building the financial knowledge and skills to establish independence — from opening accounts to understanding credit and budgeting.</p>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-icon">📋</div>
+                <h4>Life Management Skills</h4>
+                <p>Practical skills and support for rebuilding day-to-day life — from employment readiness to parenting resources and self-advocacy.</p>
+              </div>
+              <div class="pillar-card">
+                <div class="pillar-icon">🏠</div>
+                <h4>Housing Referrals</h4>
+                <p>Connections to emergency shelter, transitional housing, and long-term housing resources in both service regions.</p>
+              </div>
+            </div>
+
+            <div class="eligibility-block">
+              <h3 class="eligibility-heading">Who can access the OMOT Program?</h3>
+              <p>
+                The OMOT Program is available to survivors of domestic violence, emotional abuse, and related trauma in the Northern Bay Area, CA and Metro Atlanta, GA service areas. You do not need to be in immediate crisis to access support — you just need to reach out.
+              </p>
+              <p style="margin-top:var(--space-3);">
+                There are no fees for program participation. OMOT is a 501(c)(3) nonprofit organization.
+              </p>
+            </div>
+
+            <a href="get-help.html#intake-form" class="btn btn-gold" style="margin-top:var(--space-8);">Request Program Support</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SERVICE 3: WORKSHOPS ── -->
+    <section class="section bg-white service-section" id="workshops">
+      <div class="container">
+        <div class="service-block">
+          <div class="service-block-label">
+            <div class="service-block-icon">✨</div>
+            <p class="text-eyebrow">Service 03</p>
+          </div>
+          <div class="service-block-content">
+            <div class="divider"></div>
+            <h2>Workshops</h2>
+            <p class="service-lead">
+              Knowledge is protection. Our monthly workshops give survivors — and those who love them — the tools to recognize abuse, understand their options, and build a plan to move forward safely.
+            </p>
+            <p class="service-body">
+              OMOT hosts workshops across both service regions, creating safe, confidential spaces where survivors can learn, connect, and be witnessed. Topics are practical, trauma-informed, and led by people who understand what you are navigating from the inside.
+            </p>
+
+            <div class="workshop-topics">
+              <h3 class="workshop-topics-heading">Workshop topics include:</h3>
+              <div class="topics-grid">
+                <div class="topic-item">
+                  <span class="topic-check">✓</span>
+                  Understanding domestic abuse — types, patterns, and cycles
+                </div>
+                <div class="topic-item">
+                  <span class="topic-check">✓</span>
+                  Recognizing warning signs and red flags
+                </div>
+                <div class="topic-item">
+                  <span class="topic-check">✓</span>
+                  Building a personalized safety plan
+                </div>
+                <div class="topic-item">
+                  <span class="topic-check">✓</span>
+                  Rebuilding self-esteem and identity after abuse
+                </div>
+                <div class="topic-item">
+                  <span class="topic-check">✓</span>
+                  Healthy relationships and boundary setting
+                </div>
+                <div class="topic-item">
+                  <span class="topic-check">✓</span>
+                  Navigating the legal system as a survivor
+                </div>
+                <div class="topic-item">
+                  <span class="topic-check">✓</span>
+                  Parenting through and after abuse
+                </div>
+                <div class="topic-item">
+                  <span class="topic-check">✓</span>
+                  Financial independence and rebuilding
+                </div>
+              </div>
+            </div>
+
+            <div class="workshop-cta-block">
+              <p>Workshops are held monthly in both regions. Space is limited to maintain a safe and intimate environment.</p>
+              <div style="display:flex;gap:var(--space-4);flex-wrap:wrap;margin-top:var(--space-6);">
+                <a href="get-help.html#intake-form" class="btn btn-primary">Register for a Workshop</a>
+                <a href="get-involved.html" class="btn btn-outline">Volunteer to Facilitate</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── REGIONS ── -->
+    <section class="section bg-surface">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:var(--space-12);">
+          <p class="text-eyebrow">Where we serve</p>
+          <div class="divider divider-center"></div>
+          <h2>Two regions. One mission.</h2>
+        </div>
+        <div class="regions-grid">
+          <div class="region-card">
+            <div class="region-icon">🌉</div>
+            <h3 class="region-name">Northern Bay Area, CA</h3>
+            <p class="region-desc">
+              Serving survivors across Solano, Napa, Sonoma, Marin, and surrounding counties. We maintain partnerships with Bay Area shelters, legal aid organizations, and counseling networks.
+            </p>
+            <p class="region-contact">
+              <a href="tel:[PHONE NUMBER]">[PHONE NUMBER]</a>
+            </p>
+          </div>
+          <div class="region-card">
+            <div class="region-icon">🍑</div>
+            <h3 class="region-name">Metro Atlanta, GA</h3>
+            <p class="region-desc">
+              Serving survivors across Fulton, DeKalb, Gwinnett, Clayton, and surrounding counties. We work alongside Atlanta-area organizations including Partnership Against Domestic Violence.
+            </p>
+            <p class="region-contact">
+              <a href="tel:[PHONE NUMBER]">[PHONE NUMBER]</a>
+            </p>
+          </div>
+        </div>
+        <p class="region-note text-center" style="margin-top:var(--space-8);">
+          Outside our service areas? We will still do everything we can to connect you with resources near you. <a href="get-help.html">Reach out here.</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ── BOTTOM CTA ── -->
+    <section class="section services-bottom-cta">
+      <div class="container container-md text-center">
+        <p class="text-eyebrow" style="color:var(--color-gold-light);">Ready to take the next step?</p>
+        <h2 style="color:var(--color-white);margin-bottom:var(--space-6);">You do not have to figure this out alone.</h2>
+        <p style="color:rgba(255,255,255,0.75);max-width:520px;margin:0 auto var(--space-10);line-height:1.7;">
+          Whether you are not sure which service fits, need to talk to someone first, or are ready to jump in — the right place to start is the same: reach out.
+        </p>
+        <div style="display:flex;gap:var(--space-4);justify-content:center;flex-wrap:wrap;">
+          <a href="get-help.html" class="btn btn-gold btn-lg">Get Help Now</a>
+          <a href="donate.html" class="btn btn-outline-white">Support Our Work</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-brand-name">Owning My Own Truth</p>
+          <p class="footer-tagline">Breaking the inter-generational cycle of abuse through counseling, advocacy, and community. Northern Bay Area, CA &amp; Metro Atlanta, GA.</p>
+          <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.45);margin-bottom:var(--space-4);">501(c)(3) Nonprofit &nbsp;|&nbsp; EIN 82-4604330</p>
+          <div class="footer-crisis">
+            <p class="footer-crisis-label">Crisis Line — 24/7</p>
+            <a href="tel:18007997233">1-800-799-7233</a>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/17fy1nY4sa/?mibextid=wwXIfr" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/owningmyowntruth?igsh=a2F0MTJ2eHRvZG9q" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-heading">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="get-help.html">Get Help</a></li>
+            <li><a href="get-involved.html">Volunteer</a></li>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Crisis Resources</p>
+          <ul class="footer-links">
+            <li><a href="tel:18007997233">DV Hotline: 1-800-799-7233</a></li>
+            <li><a href="tel:18006564673">RAINN: 1-800-656-4673</a></li>
+            <li><a href="sms:741741">Text HOME to 741741</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Contact OMOT</p>
+          <ul class="footer-links">
+            <li><a href="tel:[PHONE NUMBER]">[PHONE NUMBER]</a></li>
+            <li><a href="mailto:info@owningmyowntruth.org">info@owningmyowntruth.org</a></li>
+            <li style="color:rgba(255,255,255,0.55);font-size:var(--text-sm);">Northern Bay Area, CA</li>
+            <li style="color:rgba(255,255,255,0.55);font-size:var(--text-sm);">Metro Atlanta, GA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Owning My Own Truth, Inc. All rights reserved.</p>
+        <div class="flex gap-4">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="get-help.html">Get Help</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get involved with Owning My Own Truth. Volunteer, become a community partner, or donate your time and skills to support survivors of domestic violence in Northern Bay Area, CA and Metro Atlanta, GA.">
+  <title>Get Involved — Owning My Own Truth</title>
+  <link rel="stylesheet" href="../css/design-system.css">
+  <link rel="stylesheet" href="../css/get-involved.css">
+</head>
+<body>
+
+  <!-- Safety Exit Button -->
+  <button class="safety-exit" onclick="safetyExit()" aria-label="Quickly leave this site">
+    ✕ Exit Site Quickly
+  </button>
+
+  <!-- Crisis Bar -->
+  <div class="crisis-bar" role="banner">
+    If you are in immediate danger, call <a href="tel:911">911</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    National DV Hotline: <a href="tel:18007997233">1-800-799-7233</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    Text START to <a href="sms:88788">88788</a>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <img src="../images/logo-refined.png" alt="Owning My Own Truth" class="nav-logo-img">
+        <span class="nav-logo-text">Owning My Own Truth</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="get-help.html" class="nav-get-help">Get Help</a></li>
+        <li><a href="get-involved.html" class="active">Get Involved</a></li>
+        <li><a href="donate.html" class="nav-cta">Donate</a></li>
+      </ul>
+      <button class="nav-hamburger" onclick="openMobileNav()" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav-mobile-overlay" id="mobileNav" role="dialog">
+    <div class="nav-mobile-header">
+      <img src="../images/logo-refined.png" alt="OMOT Logo" style="width:44px;height:44px;object-fit:contain;">
+      <button class="nav-mobile-close" onclick="closeMobileNav()">&times;</button>
+    </div>
+    <nav class="nav-mobile-links">
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="get-help.html">Get Help</a>
+      <a href="get-involved.html" style="color:var(--color-gold);font-weight:700;">Get Involved</a>
+      <a href="donate.html">Donate</a>
+    </nav>
+    <div class="nav-mobile-crisis">
+      In crisis? Call <a href="tel:18007997233">1-800-799-7233</a> now.
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section class="involved-hero">
+      <div class="container">
+        <p class="text-eyebrow" style="color:var(--color-gold-light);">Join the mission</p>
+        <h1 style="color:var(--color-white);">The work we do<br>takes all of us.</h1>
+        <p class="involved-hero-body">
+          Survivors need more than one organization — they need a community. Whether you have time, skills, or resources to offer, there is a place for you in the OMOT mission.
+        </p>
+        <div class="involved-hero-nav">
+          <a href="#volunteer" class="services-nav-pill">Volunteer</a>
+          <a href="#partner" class="services-nav-pill">Become a Partner</a>
+          <a href="#donate-time" class="services-nav-pill">Donate Skills</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WHY IT MATTERS ── -->
+    <section class="section bg-white">
+      <div class="container">
+        <div class="why-grid">
+          <div class="why-content">
+            <p class="text-eyebrow">Why it matters</p>
+            <div class="divider"></div>
+            <h2>Your involvement changes lives.</h2>
+            <p style="color:var(--color-text-muted);line-height:1.8;margin-top:var(--space-4);">
+              Every volunteer hour, every community partnership, every skill donated directly expands what OMOT can offer to survivors. We are a small team doing meaningful work — and the more people who show up with us, the further that work reaches.
+            </p>
+            <p style="color:var(--color-text-muted);line-height:1.8;margin-top:var(--space-4);">
+              You do not need to be a survivor to be part of this. You just need to care.
+            </p>
+          </div>
+          <div class="why-stats">
+            <div class="why-stat">
+              <span class="why-stat-num">2</span>
+              <p>regions where volunteers make a direct difference</p>
+            </div>
+            <div class="why-stat">
+              <span class="why-stat-num">3</span>
+              <p>ways to get involved — no matter your schedule or skill set</p>
+            </div>
+            <div class="why-stat">
+              <span class="why-stat-num">1</span>
+              <p>mission: end the cycle of abuse, one person at a time</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── VOLUNTEER ── -->
+    <section class="section bg-surface involvement-section" id="volunteer">
+      <div class="container">
+        <div class="involvement-block">
+          <div class="involvement-header">
+            <div class="involvement-icon">🙋</div>
+            <div>
+              <p class="text-eyebrow">Get involved</p>
+              <div class="divider"></div>
+              <h2>Volunteer with OMOT</h2>
+            </div>
+          </div>
+
+          <p class="involvement-lead">
+            Our volunteers are the heartbeat of this organization. From workshop facilitation to administrative support, there are meaningful ways to contribute — regardless of your background.
+          </p>
+
+          <div class="roles-grid">
+            <div class="role-card">
+              <div class="role-icon">📋</div>
+              <h4>Workshop Facilitator</h4>
+              <p>Lead or co-facilitate monthly workshops on DV awareness, safety planning, healthy relationships, and survivor empowerment. Training provided.</p>
+              <span class="role-commitment">Monthly commitment</span>
+            </div>
+            <div class="role-card">
+              <div class="role-icon">📞</div>
+              <h4>Outreach Volunteer</h4>
+              <p>Help us connect with community organizations, attend resource fairs, and spread awareness about OMOT services in your area.</p>
+              <span class="role-commitment">Flexible schedule</span>
+            </div>
+            <div class="role-card">
+              <div class="role-icon">🚗</div>
+              <h4>Transportation Support</h4>
+              <p>Provide transportation assistance to program participants attending appointments, court dates, or accessing services.</p>
+              <span class="role-commitment">As available</span>
+            </div>
+            <div class="role-card">
+              <div class="role-icon">🖥️</div>
+              <h4>Administrative Support</h4>
+              <p>Help with data entry, communication, event coordination, and the behind-the-scenes work that keeps OMOT running.</p>
+              <span class="role-commitment">Remote-friendly</span>
+            </div>
+            <div class="role-card">
+              <div class="role-icon">📸</div>
+              <h4>Photography &amp; Media</h4>
+              <p>Document OMOT events and workshops (with consent protocols) and help us tell our story visually across social media and the web.</p>
+              <span class="role-commitment">Event-based</span>
+            </div>
+            <div class="role-card role-card-open">
+              <div class="role-icon">✨</div>
+              <h4>Have a skill we did not list?</h4>
+              <p>We welcome legal professionals, mental health advocates, financial coaches, educators, and anyone with something to offer. Tell us about yourself in the form below.</p>
+              <span class="role-commitment">You tell us</span>
+            </div>
+          </div>
+
+          <div class="involvement-form-wrap" id="volunteer-form">
+            <h3 class="form-section-title">Apply to Volunteer</h3>
+
+            <!-- PLACEHOLDER: Replace with HubSpot volunteer form embed -->
+            <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+            <script>hbspt.forms.create({ portalId: "[HUBSPOT_PORTAL_ID]", formId: "[HUBSPOT_VOLUNTEER_FORM_ID]" });</script> -->
+
+            <form class="involvement-form" onsubmit="handleVolunteerSubmit(event)" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="vFirstName">First name <span class="form-required">*</span></label>
+                  <input type="text" id="vFirstName" class="form-input" required autocomplete="given-name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="vLastName">Last name <span class="form-required">*</span></label>
+                  <input type="text" id="vLastName" class="form-input" required autocomplete="family-name">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="vEmail">Email address <span class="form-required">*</span></label>
+                  <input type="email" id="vEmail" class="form-input" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="vPhone">Phone number</label>
+                  <input type="tel" id="vPhone" class="form-input" autocomplete="tel">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="vRegion">Which region are you in? <span class="form-required">*</span></label>
+                <select id="vRegion" class="form-select" required>
+                  <option value="">— Select region —</option>
+                  <option value="bay-area">Northern Bay Area, CA</option>
+                  <option value="atlanta">Metro Atlanta, GA</option>
+                  <option value="remote">Remote only</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="vRole">Which volunteer role interests you?</label>
+                <select id="vRole" class="form-select">
+                  <option value="">— Select one —</option>
+                  <option value="facilitator">Workshop Facilitator</option>
+                  <option value="outreach">Outreach Volunteer</option>
+                  <option value="transport">Transportation Support</option>
+                  <option value="admin">Administrative Support</option>
+                  <option value="media">Photography &amp; Media</option>
+                  <option value="other">Other — I will describe below</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="vBackground">Tell us about yourself and why you want to get involved</label>
+                <textarea id="vBackground" class="form-textarea" rows="4" placeholder="Share your background, skills, and what draws you to this work. Completely optional."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit-btn">Submit Volunteer Application</button>
+              <div class="form-success" id="volunteerSuccess" style="display:none;" role="alert">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <div>
+                  <strong>Application received.</strong>
+                  <p>A member of the OMOT team will be in touch within 3–5 business days. Thank you for stepping up.</p>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PARTNER ── -->
+    <section class="section bg-white involvement-section" id="partner">
+      <div class="container">
+        <div class="involvement-block">
+          <div class="involvement-header">
+            <div class="involvement-icon">🤝</div>
+            <div>
+              <p class="text-eyebrow">Organizations</p>
+              <div class="divider"></div>
+              <h2>Become a Community Partner</h2>
+            </div>
+          </div>
+
+          <p class="involvement-lead">
+            OMOT's ability to serve survivors depends on strong relationships with organizations across both regions. If your organization works in healthcare, legal services, housing, education, or community support — we want to hear from you.
+          </p>
+
+          <div class="partner-types">
+            <div class="partner-type">
+              <h4>Referral Partners</h4>
+              <p>Send survivors to OMOT, or receive warm referrals from us. We work with shelters, hospitals, schools, faith communities, and social service agencies.</p>
+            </div>
+            <div class="partner-type">
+              <h4>Resource Partners</h4>
+              <p>Offer in-kind support — space for workshops, printed materials, transportation resources, or professional services donated to our program participants.</p>
+            </div>
+            <div class="partner-type">
+              <h4>Corporate Partners</h4>
+              <p>Support OMOT through employee volunteer programs, sponsorships, or matching gift campaigns. We welcome businesses that want to invest in the communities they operate in.</p>
+            </div>
+            <div class="partner-type">
+              <h4>Faith Communities</h4>
+              <p>Host OMOT workshops, provide meeting space, or serve as a trusted referral point for congregation members experiencing abuse.</p>
+            </div>
+          </div>
+
+          <div class="partner-contact-block">
+            <p>To explore a partnership, reach out directly:</p>
+            <div class="partner-contact-options">
+              <a href="mailto:info@owningmyowntruth.org" class="btn btn-primary">Email Us to Partner</a>
+              <a href="tel:[PHONE NUMBER]" class="btn btn-outline">Call [PHONE NUMBER]</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DONATE TIME / SKILLS ── -->
+    <section class="section bg-surface involvement-section" id="donate-time">
+      <div class="container">
+        <div class="involvement-block">
+          <div class="involvement-header">
+            <div class="involvement-icon">💡</div>
+            <div>
+              <p class="text-eyebrow">Pro bono support</p>
+              <div class="divider"></div>
+              <h2>Donate Your Skills</h2>
+            </div>
+          </div>
+
+          <p class="involvement-lead">
+            Some of the most impactful contributions are not financial — they are professional. If you have expertise to offer, OMOT has a place for you.
+          </p>
+
+          <div class="skills-grid">
+            <div class="skill-item">
+              <span class="skill-tag">Legal</span>
+              <p>Attorneys who can assist survivors with protective orders, custody, immigration status, and housing rights.</p>
+            </div>
+            <div class="skill-item">
+              <span class="skill-tag">Mental Health</span>
+              <p>Licensed counselors and therapists who can offer sessions or group support for program participants.</p>
+            </div>
+            <div class="skill-item">
+              <span class="skill-tag">Financial</span>
+              <p>Financial coaches, CPAs, and credit counselors who can support our financial literacy programming.</p>
+            </div>
+            <div class="skill-item">
+              <span class="skill-tag">Healthcare</span>
+              <p>Medical professionals who can provide information, referrals, or volunteer at OMOT events.</p>
+            </div>
+            <div class="skill-item">
+              <span class="skill-tag">Education</span>
+              <p>Educators and trainers who can develop or deliver curriculum on abuse prevention and survivor empowerment.</p>
+            </div>
+            <div class="skill-item">
+              <span class="skill-tag">Technology</span>
+              <p>Developers, designers, and tech professionals who can support OMOT's digital presence and tools.</p>
+            </div>
+          </div>
+
+          <div style="margin-top:var(--space-8);">
+            <a href="#volunteer-form" class="btn btn-gold">Tell Us What You Offer</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DONATE MONEY CTA ── -->
+    <section class="section involved-donate-cta">
+      <div class="container container-md text-center">
+        <p class="text-eyebrow" style="color:var(--color-gold-light);">Not able to volunteer right now?</p>
+        <h2 style="color:var(--color-white);margin-bottom:var(--space-4);">A financial gift goes just as far.</h2>
+        <p style="color:rgba(255,255,255,0.75);max-width:500px;margin:0 auto var(--space-10);line-height:1.7;">
+          Every donation funds direct services for survivors — transportation, counseling, workshop materials, and more. OMOT is a 501(c)(3) nonprofit. All donations are tax-deductible.
+        </p>
+        <div style="display:flex;gap:var(--space-4);justify-content:center;flex-wrap:wrap;">
+          <a href="donate.html" class="btn btn-gold btn-lg">Make a Donation</a>
+          <a href="get-help.html" class="btn btn-outline-white">Someone Needs Help</a>
+        </div>
+        <p style="margin-top:var(--space-6);font-size:var(--text-sm);color:rgba(255,255,255,0.4);">EIN: 82-4604330</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-brand-name">Owning My Own Truth</p>
+          <p class="footer-tagline">Breaking the inter-generational cycle of abuse through counseling, advocacy, and community. Northern Bay Area, CA &amp; Metro Atlanta, GA.</p>
+          <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.45);margin-bottom:var(--space-4);">501(c)(3) Nonprofit &nbsp;|&nbsp; EIN 82-4604330</p>
+          <div class="footer-crisis">
+            <p class="footer-crisis-label">Crisis Line — 24/7</p>
+            <a href="tel:18007997233">1-800-799-7233</a>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/17fy1nY4sa/?mibextid=wwXIfr" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/owningmyowntruth?igsh=a2F0MTJ2eHRvZG9q" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-heading">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="get-help.html">Get Help</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Crisis Resources</p>
+          <ul class="footer-links">
+            <li><a href="tel:18007997233">DV Hotline: 1-800-799-7233</a></li>
+            <li><a href="tel:18006564673">RAINN: 1-800-656-4673</a></li>
+            <li><a href="sms:741741">Text HOME to 741741</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Contact OMOT</p>
+          <ul class="footer-links">
+            <li><a href="tel:[PHONE NUMBER]">[PHONE NUMBER]</a></li>
+            <li><a href="mailto:info@owningmyowntruth.org">info@owningmyowntruth.org</a></li>
+            <li style="color:rgba(255,255,255,0.55);font-size:var(--text-sm);">Northern Bay Area, CA</li>
+            <li style="color:rgba(255,255,255,0.55);font-size:var(--text-sm);">Metro Atlanta, GA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Owning My Own Truth, Inc. All rights reserved.</p>
+        <div class="flex gap-4">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="get-help.html">Get Help</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    function handleVolunteerSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const btn = form.querySelector('.form-submit-btn');
+      btn.textContent = 'Submitting...';
+      btn.disabled = true;
+      setTimeout(() => {
+        form.style.display = 'none';
+        document.getElementById('volunteerSuccess').style.display = 'flex';
+      }, 800);
+    }
+  </script>
+</body>
+</html>

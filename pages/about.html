@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about Owning My Own Truth — a nonprofit founded by Tina Robinson to break the inter-generational cycle of abuse through counseling, advocacy, and community in Northern Bay Area, CA and Metro Atlanta, GA.">
+  <title>About Us — Owning My Own Truth</title>
+  <link rel="stylesheet" href="../css/design-system.css">
+  <link rel="stylesheet" href="../css/about.css">
+</head>
+<body>
+
+  <!-- Safety Exit Button -->
+  <button class="safety-exit" onclick="safetyExit()" aria-label="Quickly leave this site">
+    ✕ Exit Site Quickly
+  </button>
+
+  <!-- Crisis Bar -->
+  <div class="crisis-bar" role="banner">
+    If you are in immediate danger, call <a href="tel:911">911</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    National DV Hotline: <a href="tel:18007997233">1-800-799-7233</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    Text START to <a href="sms:88788">88788</a>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <img src="../images/logo-refined.png" alt="Owning My Own Truth" class="nav-logo-img">
+        <span class="nav-logo-text">Owning My Own Truth</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="get-help.html" class="nav-get-help">Get Help</a></li>
+        <li><a href="get-involved.html">Get Involved</a></li>
+        <li><a href="donate.html" class="nav-cta">Donate</a></li>
+      </ul>
+      <button class="nav-hamburger" onclick="openMobileNav()" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav-mobile-overlay" id="mobileNav" role="dialog">
+    <div class="nav-mobile-header">
+      <img src="../images/logo-refined.png" alt="OMOT Logo" style="width:44px;height:44px;object-fit:contain;">
+      <button class="nav-mobile-close" onclick="closeMobileNav()">&times;</button>
+    </div>
+    <nav class="nav-mobile-links">
+      <a href="../index.html">Home</a>
+      <a href="about.html" style="color:var(--color-gold);font-weight:700;">About</a>
+      <a href="services.html">Services</a>
+      <a href="get-help.html">Get Help</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="donate.html">Donate</a>
+    </nav>
+    <div class="nav-mobile-crisis">
+      In crisis? Call <a href="tel:18007997233">1-800-799-7233</a> now.
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ── PAGE HERO ── -->
+    <section class="about-hero">
+      <div class="container">
+        <p class="text-eyebrow" style="color:var(--color-gold-light);">Our story</p>
+        <h1 style="color:var(--color-white);">Born from survival.<br>Built for community.</h1>
+        <p class="about-hero-body">
+          Owning My Own Truth was founded on the belief that no one should have to suffer in silence. We exist to walk alongside survivors — from the first moment of courage through every step toward healing and independence.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── MISSION AND VISION ── -->
+    <section class="section bg-white">
+      <div class="container">
+        <div class="mission-grid">
+          <div class="mission-block">
+            <div class="mission-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h2 class="mission-label">Our Mission</h2>
+            <p class="mission-text">
+              To break the inter-generational cycle of abuse by empowering survivors to move from victimization to emotional health, independence, and community — through counseling, advocacy, education, and holistic support.
+            </p>
+          </div>
+          <div class="mission-block mission-block-accent">
+            <div class="mission-icon mission-icon-gold">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <h2 class="mission-label">Our Vision</h2>
+            <p class="mission-text">
+              A world where every survivor has access to the resources, community, and truth-telling they need to reclaim their identity, safety, and future.
+            </p>
+          </div>
+          <div class="mission-block">
+            <div class="mission-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h2 class="mission-label">Who We Serve</h2>
+            <p class="mission-text">
+              Men, women, and children experiencing physical, mental, and emotional abuse in underserved communities. We serve survivors in Northern Bay Area, CA and Metro Atlanta, GA.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOUNDER STORY ── -->
+    <section class="section founder-full-section" id="founder" aria-labelledby="founder-heading">
+      <div class="container">
+        <div class="founder-full-grid">
+
+          <div class="founder-full-visual" aria-hidden="true">
+            <img src="../images/tina-robinson.jpg" alt="Tina Robinson, CEO and Founder of Owning My Own Truth" class="founder-real-photo">
+
+            <div class="founder-credentials">
+              <div class="credential-item">
+                <span class="credential-dot"></span>
+                FEMA Crisis Counselor
+              </div>
+              <div class="credential-item">
+                <span class="credential-dot"></span>
+                Outreach Specialist
+              </div>
+              <div class="credential-item">
+                <span class="credential-dot"></span>
+                Master Hairstylist
+              </div>
+              <div class="credential-item">
+                <span class="credential-dot"></span>
+                Survivor. Advocate. Founder.
+              </div>
+            </div>
+          </div>
+
+          <div class="founder-full-content">
+            <p class="text-eyebrow">Our founder</p>
+            <div class="divider"></div>
+            <h2 id="founder-heading">Tina Robinson</h2>
+            <p class="text-script founder-title-script">CEO &amp; Founder</p>
+
+            <div class="founder-story">
+              <p>
+                Owning My Own Truth was born from a place most people never want to go — and from a woman who chose to turn her pain into purpose.
+              </p>
+              <p>
+                Tina Robinson is a mother, a Master Hairstylist, a FEMA-trained Crisis Counselor, and a survivor. After living through her own experience of abuse, she made a decision that would change not just her life, but the lives of countless others: she would speak. She would reach back. She would build something that did not exist when she needed it most.
+              </p>
+              <p>
+                Founded alongside co-founder Jeania Robinson, OMOT was established to fill a gap in underserved communities — where survivors often face abuse in silence, without access to culturally sensitive support, legal resources, or a community that truly understands their experience.
+              </p>
+              <p>
+                Tina brings her FEMA crisis counseling training, her outreach experience, and the credibility of lived truth to every interaction. She does not just talk about healing — she is proof of it.
+              </p>
+            </div>
+
+            <blockquote class="founder-quote">
+              <p>"I no longer live as a hostage to fear or judgment from others. Today, I speak and live from a place of victory. My life's mission is to break the generational pattern of people suffering in silence."</p>
+              <footer>— Tina Robinson, CEO &amp; Founder</footer>
+            </blockquote>
+
+            <a href="get-help.html" class="btn btn-primary" style="margin-top:var(--space-8);">Get Support from Our Team</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CO-FOUNDER ── -->
+    <section class="section bg-surface">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:var(--space-12);">
+          <p class="text-eyebrow">Our team</p>
+          <div class="divider divider-center"></div>
+          <h2>The people behind the mission</h2>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <img src="../images/tina-robinson.jpg" alt="Tina Robinson" class="team-photo">
+            <h3 class="team-name">Tina Robinson</h3>
+            <p class="team-role">CEO &amp; Founder</p>
+            <p class="team-bio">FEMA Crisis Counselor. Outreach Specialist. Survivor. Tina founded OMOT to give others the support she needed and could not find.</p>
+          </div>
+
+          <div class="team-card">
+            <img src="../images/jeania-robinson.jpg" alt="Jeania Robinson, Co-Founder of Owning My Own Truth" class="team-photo">
+            <h3 class="team-name">Jeania Robinson</h3>
+            <p class="team-role">Co-Founder</p>
+            <p class="team-bio">Co-founder of OMOT, committed to expanding the organization's reach and impact across both service regions.</p>
+          </div>
+
+          <div class="team-card team-card-join">
+            <div class="team-join-icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+            </div>
+            <h3 class="team-name">Join Our Team</h3>
+            <p class="team-role">Volunteer &amp; Advocate</p>
+            <p class="team-bio">We are always looking for compassionate people to join our work — as volunteers, advocates, and community partners.</p>
+            <a href="get-involved.html" class="btn btn-outline" style="margin-top:var(--space-5);font-size:var(--text-sm);">Get Involved</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── VALUES ── -->
+    <section class="section bg-white">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:var(--space-12);">
+          <p class="text-eyebrow">What we stand for</p>
+          <div class="divider divider-center"></div>
+          <h2>Our core values</h2>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3>Compassion</h3>
+            <p>Every survivor is met exactly where they are — without judgment, without pressure, and with complete respect for their timing and choices.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3>Confidentiality</h3>
+            <p>Your safety and privacy are non-negotiable. What you share with OMOT stays with OMOT. We never share information without explicit consent.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="16 12 12 8 8 12"/><line x1="12" y1="16" x2="12" y2="8"/></svg>
+            </div>
+            <h3>Empowerment</h3>
+            <p>We do not rescue — we walk alongside. Our goal is always to help survivors build the knowledge, tools, and confidence to lead their own lives forward.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Community</h3>
+            <p>Healing does not happen alone. We build connection — between survivors, advocates, partners, and the broader community — because belonging is part of recovery.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Truth</h3>
+            <p>Our name says it all. Owning your own truth is an act of courage. We hold space for the real, unedited stories of those we serve — and honor the power in speaking them.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
+            </div>
+            <h3>Sustainability</h3>
+            <p>We are here for the long haul. Our programs are designed to create lasting change — not just immediate relief — so survivors can build lives that hold.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SCRIPTURE / ANCHOR ── -->
+    <section class="section about-scripture-section">
+      <div class="container container-md text-center">
+        <p class="text-script" style="font-size:clamp(1.4rem,3vw,2rem);color:var(--color-gold-light);margin-bottom:var(--space-6);">"The truth will set you free."</p>
+        <p style="color:rgba(255,255,255,0.55);font-size:var(--text-sm);letter-spacing:0.06em;text-transform:uppercase;">John 8:32</p>
+        <div style="margin-top:var(--space-10);">
+          <a href="get-help.html" class="btn btn-gold btn-lg">Get Help Today</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 501c3 INFO ── -->
+    <section class="section bg-surface">
+      <div class="container container-md text-center">
+        <p class="text-eyebrow">Our nonprofit status</p>
+        <div class="divider divider-center"></div>
+        <h2 style="font-size:var(--text-2xl);">Owning My Own Truth, Inc.</h2>
+        <p style="color:var(--color-text-muted);margin-top:var(--space-4);max-width:500px;margin-left:auto;margin-right:auto;">
+          We are a registered 501(c)(3) nonprofit organization. All donations are tax-deductible to the extent permitted by law.
+        </p>
+        <p style="margin-top:var(--space-3);font-weight:600;color:var(--color-violet);">EIN: 82-4604330</p>
+        <div style="margin-top:var(--space-8);display:flex;gap:var(--space-4);justify-content:center;flex-wrap:wrap;">
+          <a href="donate.html" class="btn btn-primary">Support Our Work</a>
+          <a href="privacy.html" class="btn btn-outline">Privacy Policy</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-brand-name">Owning My Own Truth</p>
+          <p class="footer-tagline">Breaking the inter-generational cycle of abuse through counseling, advocacy, and community. Northern Bay Area, CA &amp; Metro Atlanta, GA.</p>
+          <p style="font-size:var(--text-xs);color:rgba(255,255,255,0.45);margin-bottom:var(--space-4);">501(c)(3) Nonprofit &nbsp;|&nbsp; EIN 82-4604330</p>
+          <div class="footer-crisis">
+            <p class="footer-crisis-label">Crisis Line — 24/7</p>
+            <a href="tel:18007997233">1-800-799-7233</a>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/share/17fy1nY4sa/?mibextid=wwXIfr" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/owningmyowntruth?igsh=a2F0MTJ2eHRvZG9q" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-heading">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="get-help.html">Get Help</a></li>
+            <li><a href="get-involved.html">Volunteer</a></li>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Crisis Resources</p>
+          <ul class="footer-links">
+            <li><a href="tel:18007997233">DV Hotline: 1-800-799-7233</a></li>
+            <li><a href="tel:18006564673">RAINN: 1-800-656-4673</a></li>
+            <li><a href="sms:741741">Text HOME to 741741</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading">Contact OMOT</p>
+          <ul class="footer-links">
+            <li><a href="tel:[PHONE NUMBER]">[PHONE NUMBER]</a></li>
+            <li><a href="mailto:info@owningmyowntruth.org">info@owningmyowntruth.org</a></li>
+            <li style="color:rgba(255,255,255,0.55);font-size:var(--text-sm);">Northern Bay Area, CA</li>
+            <li style="color:rgba(255,255,255,0.55);font-size:var(--text-sm);">Metro Atlanta, GA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Owning My Own Truth, Inc. All rights reserved.</p>
+        <div class="flex gap-4">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="get-help.html">Get Help</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

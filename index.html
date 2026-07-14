@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Owning My Own Truth (OMOT) provides counseling, advocacy, and community support for survivors of domestic violence and abuse in the Northern Bay Area, CA and Metro Atlanta, GA. Established 2015.">
+  <meta property="og:title" content="Owning My Own Truth — Empowering Survivors Since 2015">
+  <meta property="og:description" content="Breaking the inter-generational cycle of abuse through counseling, advocacy, and community. Northern Bay Area, CA and Metro Atlanta, GA.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.owningmyowntruth.org">
+  <title>Owning My Own Truth — Empowering Survivors Since 2015</title>
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <!-- Safety Exit Button -->
+  <button class="safety-exit" onclick="safetyExit()" aria-label="Quickly leave this site">
+    ✕ Exit Site Quickly
+  </button>
+
+  <!-- Crisis Bar -->
+  <div class="crisis-bar" role="banner" aria-label="Crisis resources">
+    If you are in immediate danger, call <a href="tel:911">911</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    National DV Hotline: <a href="tel:18007997233">1-800-799-7233</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    Text START to <a href="sms:88788">88788</a>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Owning My Own Truth - Home">
+        <img src="images/logo-refined.png" alt="Owning My Own Truth butterfly logo" class="nav-logo-img">
+        <span class="nav-logo-text">Owning My Own Truth</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/services.html">Services</a></li>
+        <li><a href="pages/get-help.html" class="nav-get-help">Get Help</a></li>
+        <li><a href="pages/get-involved.html">Get Involved</a></li>
+        <li><a href="pages/donate.html" class="nav-cta">Donate</a></li>
+      </ul>
+      <button class="nav-hamburger" aria-label="Open menu" onclick="openMobileNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="nav-mobile-overlay" id="mobileNav" role="dialog" aria-label="Mobile navigation">
+    <div class="nav-mobile-header">
+      <img src="images/logo-refined.png" alt="OMOT Logo" style="width:44px;height:44px;object-fit:contain;">
+      <button class="nav-mobile-close" onclick="closeMobileNav()" aria-label="Close menu">&times;</button>
+    </div>
+    <nav class="nav-mobile-links">
+      <a href="index.html" onclick="closeMobileNav()">Home</a>
+      <a href="pages/about.html" onclick="closeMobileNav()">About</a>
+      <a href="pages/services.html" onclick="closeMobileNav()">Services</a>
+      <a href="pages/get-help.html" onclick="closeMobileNav()" style="color:var(--color-gold);font-weight:700;">Get Help</a>
+      <a href="pages/get-involved.html" onclick="closeMobileNav()">Get Involved</a>
+      <a href="pages/donate.html" onclick="closeMobileNav()">Donate</a>
+    </nav>
+    <div class="nav-mobile-crisis">
+      In crisis? Call <a href="tel:18007997233">1-800-799-7233</a> now.
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section class="hero" aria-label="Welcome">
+      <div class="hero-inner container">
+        <div class="hero-content">
+          <p class="text-eyebrow">Northern Bay Area, CA &nbsp;·&nbsp; Metro Atlanta, GA</p>
+          <h1 class="hero-headline">
+            You deserve to live<br>
+            <span class="hero-headline-script">free.</span>
+          </h1>
+          <p class="hero-body">
+            Owning My Own Truth provides counseling, advocacy, and community for survivors of domestic violence and abuse. We have walked this road. We know the way out.
+          </p>
+          <div class="hero-actions">
+            <a href="pages/get-help.html" class="btn btn-gold btn-lg">I Need Help</a>
+            <a href="pages/get-involved.html" class="btn btn-outline btn-lg">Get Involved</a>
+            <a href="pages/donate.html" class="btn btn-outline btn-lg">Support Our Work</a>
+          </div>
+          <p class="hero-privacy">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Your visit to this site is private. Use the red button above to exit quickly.
+          </p>
+        </div>
+        <div class="hero-slideshow" aria-hidden="true">
+          <div class="hero-slide active" style="background-image:url('images/hero1.png')"></div>
+          <div class="hero-slide" style="background-image:url('images/hero2.png')"></div>
+          <div class="hero-slide" style="background-image:url('images/hero3.png')"></div>
+          <div class="hero-slide" style="background-image:url('images/hero4.png')"></div>
+          <div class="hero-slide-dots">
+            <button class="hero-dot active" data-index="0" aria-label="Slide 1"></button>
+            <button class="hero-dot" data-index="1" aria-label="Slide 2"></button>
+            <button class="hero-dot" data-index="2" aria-label="Slide 3"></button>
+            <button class="hero-dot" data-index="3" aria-label="Slide 4"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── WHO WE ARE ── -->
+    <section class="section bg-white" aria-labelledby="who-heading">
+      <div class="container">
+        <div class="who-grid">
+          <div class="who-content">
+            <p class="text-eyebrow">Est. 2015</p>
+            <div class="divider"></div>
+            <h2 id="who-heading">Breaking the cycle. Building the future.</h2>
+            <p>
+              Owning My Own Truth, Inc. was founded by Tina and Jeania Robinson to meet the needs of men, women, and children experiencing physical, mental, and emotional abuse in underserved communities.
+            </p>
+            <p style="margin-top:var(--space-4);">
+              Our mission is to break the inter-generational cycle of abuse — empowering survivors to move from victimization to emotional health, independence, and community.
+            </p>
+            <a href="pages/about.html" class="btn btn-outline" style="margin-top:var(--space-8);">Meet Our Team</a>
+          </div>
+          <div class="who-quote">
+            <blockquote class="scripture-quote">
+              <p class="scripture-text">"Then you will know the truth, and the truth will set you free."</p>
+              <cite class="scripture-cite">— John 8:32</cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── IMPACT NUMBERS ── -->
+    <section class="section bg-surface" aria-labelledby="impact-heading">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:var(--space-12);">
+          <p class="text-eyebrow">Our Impact</p>
+          <div class="divider divider-center"></div>
+          <h2 id="impact-heading">A decade of showing up</h2>
+        </div>
+        <div class="impact-grid">
+          <div class="impact-stat">
+            <span class="stat-number">[IMPACT NUMBER]</span>
+            <p class="stat-label">Survivors Served</p>
+          </div>
+          <div class="impact-stat">
+            <span class="stat-number">10+</span>
+            <p class="stat-label">Years of Service</p>
+          </div>
+          <div class="impact-stat">
+            <span class="stat-number">[IMPACT NUMBER]</span>
+            <p class="stat-label">Workshops Held</p>
+          </div>
+          <div class="impact-stat">
+            <span class="stat-number">2</span>
+            <p class="stat-label">Regions Served</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── THREE PATHS ── -->
+    <section class="section bg-white" aria-labelledby="paths-heading">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:var(--space-12);">
+          <p class="text-eyebrow">How We Help</p>
+          <div class="divider divider-center"></div>
+          <h2 id="paths-heading">What we offer</h2>
+        </div>
+        <div class="grid grid-3">
+
+          <div class="card card-gold-accent">
+            <div class="service-icon" aria-hidden="true">🤝</div>
+            <h3 class="service-title">Community Outreach</h3>
+            <p class="service-desc">We build connections between survivors and the organizations, resources, and communities that can help them rebuild.</p>
+            <a href="pages/services.html#outreach" class="btn btn-outline btn-sm" style="margin-top:var(--space-6);">Learn More</a>
+          </div>
+
+          <div class="card card-gold-accent" style="border-top-color:var(--color-violet);">
+            <div class="service-icon" aria-hidden="true">💜</div>
+            <h3 class="service-title">OMOT Program</h3>
+            <p class="service-desc">Transportation, individual and family counseling, legal advocacy, financial literacy, life management skills, and housing referrals.</p>
+            <a href="pages/services.html#program" class="btn btn-outline btn-sm" style="margin-top:var(--space-6);">Learn More</a>
+          </div>
+
+          <div class="card card-gold-accent">
+            <div class="service-icon" aria-hidden="true">✨</div>
+            <h3 class="service-title">Workshops</h3>
+            <p class="service-desc">Monthly workshops on understanding domestic abuse, recognizing warning signs, and building a safe plan to move forward.</p>
+            <a href="pages/services.html#workshops" class="btn btn-outline btn-sm" style="margin-top:var(--space-6);">Learn More</a>
+          </div>
+
+        </div>
+        <div class="text-center" style="margin-top:var(--space-12);">
+          <a href="pages/get-help.html" class="btn btn-gold btn-lg">Ready to reach out? Start here.</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOUNDER SPOTLIGHT ── -->
+    <section class="section founder-section" aria-labelledby="founder-heading">
+      <div class="container">
+        <div class="founder-grid">
+          <div class="founder-content">
+            <p class="text-eyebrow" style="color:var(--color-gold-light);">Our Founder</p>
+            <div class="divider"></div>
+            <h2 id="founder-heading" style="color:var(--color-white);">Tina Robinson</h2>
+            <p class="text-script" style="margin-bottom:var(--space-6);">CEO &amp; Founder</p>
+            <p style="color:rgba(255,255,255,0.85); line-height:1.8;">
+              Mother. Master Hairstylist. FEMA Crisis Counselor. Outreach Specialist. And a survivor who turned her story into a mission.
+            </p>
+            <p style="color:rgba(255,255,255,0.85); line-height:1.8; margin-top:var(--space-4);">
+              "I no longer live as a hostage to fear or judgment from others. Today, I speak and live from a place of victory. My life's mission is to break the generational pattern of people suffering in silence."
+            </p>
+            <a href="pages/about.html#founder" class="btn btn-outline-white" style="margin-top:var(--space-8);">Read Tina's Story</a>
+          </div>
+          <div class="founder-visual" aria-hidden="true">
+            <img src="images/tina-robinson.jpg" alt="Tina Robinson, CEO and Founder of Owning My Own Truth" class="founder-photo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DONATE CTA ── -->
+    <section class="section bg-gold-pale" aria-labelledby="donate-heading">
+      <div class="container">
+        <div class="donate-cta text-center">
+          <p class="text-eyebrow">Support the Work</p>
+          <div class="divider divider-center"></div>
+          <h2 id="donate-heading">Every gift changes a life</h2>
+          <p class="donate-body">
+            Owning My Own Truth is a registered 501(c)(3) nonprofit. Your donation is fully tax-deductible and goes directly to serving survivors in our community.
+          </p>
+          <div class="donate-amounts">
+            <div class="donate-amount-card">
+              <span class="donate-amount">$25</span>
+              <span class="donate-what">Covers transportation to a counseling session</span>
+            </div>
+            <div class="donate-amount-card donate-amount-featured">
+              <span class="donate-amount">$50</span>
+              <span class="donate-what">Provides emergency supplies for a survivor's family</span>
+            </div>
+            <div class="donate-amount-card">
+              <span class="donate-amount">$100</span>
+              <span class="donate-what">Funds a workshop session for up to 10 participants</span>
+            </div>
+          </div>
+          <a href="pages/donate.html" class="btn btn-primary btn-lg" style="margin-top:var(--space-8);">Donate Now — EIN 82-4604330</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EMAIL SIGNUP ── -->
+    <section class="section-sm bg-violet" aria-labelledby="signup-heading">
+      <div class="container">
+        <div class="signup-row">
+          <div class="signup-text">
+            <h3 id="signup-heading" style="color:var(--color-white); margin-bottom:var(--space-2);">Stay connected</h3>
+            <p style="color:rgba(255,255,255,0.75); font-size:var(--text-sm);">Workshop updates, community news, and resources — delivered to your inbox.</p>
+          </div>
+          <form class="signup-form" onsubmit="handleSignup(event)" aria-label="Email newsletter signup">
+            <div class="signup-input-group">
+              <input
+                type="email"
+                class="form-input signup-input"
+                placeholder="Your email address"
+                required
+                aria-label="Email address"
+                autocomplete="email"
+              >
+              <button type="submit" class="btn btn-gold">Subscribe</button>
+            </div>
+            <p class="signup-privacy">We respect your privacy. Unsubscribe anytime.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <p class="footer-brand-name">Owning My Own Truth</p>
+          <p class="footer-tagline">
+            Breaking the inter-generational cycle of abuse through counseling, advocacy, and community. Northern Bay Area, CA &amp; Metro Atlanta, GA.
+          </p>
+          <p style="font-size:var(--text-xs); color:rgba(255,255,255,0.45); margin-bottom:var(--space-4);">
+            501(c)(3) Nonprofit &nbsp;|&nbsp; EIN 82-4604330
+          </p>
+          <div class="footer-crisis">
+            <p class="footer-crisis-label">Crisis Line — 24/7</p>
+            <a href="tel:18007997233">1-800-799-7233</a>
+          </div>
+          <div class="footer-social" aria-label="Social media">
+            <a href="https://www.facebook.com/share/17fy1nY4sa/?mibextid=wwXIfr" aria-label="Facebook" rel="noopener noreferrer">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/owningmyowntruth?igsh=a2F0MTJ2eHRvZG9q" aria-label="Instagram" rel="noopener noreferrer">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer-heading">Quick Links</p>
+          <ul class="footer-links">
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/services.html">Services</a></li>
+            <li><a href="pages/get-help.html">Get Help</a></li>
+            <li><a href="pages/get-involved.html">Volunteer</a></li>
+            <li><a href="pages/donate.html">Donate</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-links">
+            <li><a href="pages/crisis-resources.html">Crisis Resources</a></li>
+            <li><a href="pages/services.html#workshops">Workshops</a></li>
+            <li><a href="pages/services.html#program">OMOT Program</a></li>
+            <li><a href="#">Member Portal</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-heading">Contact</p>
+          <ul class="footer-links">
+            <li><a href="tel:[PHONE NUMBER]">[PHONE NUMBER]</a></li>
+            <li><a href="mailto:info@owningmyowntruth.org">info@owningmyowntruth.org</a></li>
+            <li style="color:rgba(255,255,255,0.55); font-size:var(--text-sm);">Northern Bay Area, CA</li>
+            <li style="color:rgba(255,255,255,0.55); font-size:var(--text-sm);">Metro Atlanta, GA</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Owning My Own Truth, Inc. All rights reserved.</p>
+        <div class="flex gap-4">
+          <a href="pages/privacy.html">Privacy Policy</a>
+          <a href="pages/get-help.html">Get Help</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <style>
+    .hero-slideshow {
+      position: relative;
+      width: 100%;
+      max-width: 580px;
+      height: 460px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 24px 64px rgba(74,26,140,0.25);
+      flex-shrink: 0;
+    }
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 0.8s ease-in-out;
+    }
+    .hero-slide.active {
+      opacity: 1;
+    }
+    .hero-slide-dots {
+      position: absolute;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      z-index: 10;
+    }
+    .hero-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: none;
+      background: rgba(255,255,255,0.5);
+      cursor: pointer;
+      padding: 0;
+      transition: all 0.3s;
+    }
+    .hero-dot.active {
+      background: #E8971E;
+      width: 24px;
+      border-radius: 4px;
+    }
+    @media (max-width: 768px) {
+      .hero-slideshow {
+        height: 280px;
+        max-width: 100%;
+        margin-top: 24px;
+      }
+    }
+  </style>
+  <script>
+    (function() {
+      const slides = document.querySelectorAll('.hero-slide');
+      const dots = document.querySelectorAll('.hero-dot');
+      let current = 0;
+      let timer;
+
+      function goTo(n) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        current = (n + slides.length) % slides.length;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+      }
+
+      function next() { goTo(current + 1); }
+
+      function startTimer() { timer = setInterval(next, 5000); }
+      function resetTimer() { clearInterval(timer); startTimer(); }
+
+      dots.forEach(dot => {
+        dot.addEventListener('click', function() {
+          goTo(parseInt(this.dataset.index));
+          resetTimer();
+        });
+      });
+
+      startTimer();
+    })();
+  </script>
+</body>
+</html>
