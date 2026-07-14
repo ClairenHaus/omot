@@ -70,6 +70,13 @@
 
     <!-- ── HERO ── -->
     <section class="hero" aria-label="Welcome">
+      <div class="hero-slideshow-bg" aria-hidden="true">
+        <div class="hero-slide active" style="background-image:url('images/hero1.png')"></div>
+        <div class="hero-slide" style="background-image:url('images/hero2.png')"></div>
+        <div class="hero-slide" style="background-image:url('images/hero3.png')"></div>
+        <div class="hero-slide" style="background-image:url('images/hero4.png')"></div>
+      </div>
+      <div class="hero-gradient-overlay" aria-hidden="true"></div>
       <div class="hero-inner container">
         <div class="hero-content">
           <p class="text-eyebrow">Northern Bay Area, CA &nbsp;·&nbsp; Metro Atlanta, GA</p>
@@ -90,19 +97,11 @@
             Your visit to this site is private. Use the red button above to exit quickly.
           </p>
         </div>
-        <div class="hero-slideshow" aria-hidden="true">
-          <div class="hero-slide active" style="background-image:url('images/hero1.png')"></div>
-          <div class="hero-slide" style="background-image:url('images/hero2.png')"></div>
-          <div class="hero-slide" style="background-image:url('images/hero3.png')"></div>
-          <div class="hero-slide" style="background-image:url('images/hero4.png')"></div>
-          <div class="hero-slide-dots">
-            <button class="hero-dot active" data-index="0" aria-label="Slide 1"></button>
-            <button class="hero-dot" data-index="1" aria-label="Slide 2"></button>
-            <button class="hero-dot" data-index="2" aria-label="Slide 3"></button>
-            <button class="hero-dot" data-index="3" aria-label="Slide 4"></button>
-          </div>
+        <div class="hero-logo-wrap" aria-hidden="true">
+          <img src="images/logo-refined.png" alt="" class="hero-logo-img">
         </div>
       </div>
+
     </section>
 
     <!-- ── WHO WE ARE ── -->
@@ -352,15 +351,14 @@
   <script src="js/main.js"></script>
 
   <style>
-    .hero-slideshow {
+    .hero {
       position: relative;
-      width: 100%;
-      max-width: 580px;
-      height: 460px;
-      border-radius: 20px;
       overflow: hidden;
-      box-shadow: 0 24px 64px rgba(74,26,140,0.25);
-      flex-shrink: 0;
+    }
+    .hero-slideshow-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
     }
     .hero-slide {
       position: absolute;
@@ -368,71 +366,41 @@
       background-size: cover;
       background-position: center;
       opacity: 0;
-      transition: opacity 0.8s ease-in-out;
+      transition: opacity 1.4s ease-in-out;
     }
     .hero-slide.active {
       opacity: 1;
     }
-    .hero-slide-dots {
+    .hero-gradient-overlay {
       position: absolute;
-      bottom: 16px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      gap: 8px;
-      z-index: 10;
+      inset: 0;
+      z-index: 1;
+      background: var(--gradient-hero);
+      opacity: 0.93;
     }
-    .hero-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      border: none;
-      background: rgba(255,255,255,0.5);
-      cursor: pointer;
-      padding: 0;
-      transition: all 0.3s;
-    }
-    .hero-dot.active {
-      background: #E8971E;
-      width: 24px;
-      border-radius: 4px;
+    .hero-inner {
+      position: relative;
+      z-index: 2;
     }
     @media (max-width: 768px) {
-      .hero-slideshow {
-        height: 280px;
-        max-width: 100%;
-        margin-top: 24px;
+      .hero-gradient-overlay {
+        opacity: 0.96;
       }
     }
   </style>
   <script>
     (function() {
       const slides = document.querySelectorAll('.hero-slide');
-      const dots = document.querySelectorAll('.hero-dot');
+      if (!slides.length) return;
       let current = 0;
-      let timer;
 
-      function goTo(n) {
+      function next() {
         slides[current].classList.remove('active');
-        dots[current].classList.remove('active');
-        current = (n + slides.length) % slides.length;
+        current = (current + 1) % slides.length;
         slides[current].classList.add('active');
-        dots[current].classList.add('active');
       }
 
-      function next() { goTo(current + 1); }
-
-      function startTimer() { timer = setInterval(next, 5000); }
-      function resetTimer() { clearInterval(timer); startTimer(); }
-
-      dots.forEach(dot => {
-        dot.addEventListener('click', function() {
-          goTo(parseInt(this.dataset.index));
-          resetTimer();
-        });
-      });
-
-      startTimer();
+      setInterval(next, 5000);
     })();
   </script>
 </body>
